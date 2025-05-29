@@ -57,8 +57,46 @@ body{
     color:#0d0d0d;
     border: none;
 }
-.btn-earlyaccess{
+.btn-early{
     background-color: #0d0d0d0c;
     color:#0d0d0d;
     border: none;
+}
+
+.hero{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../assets/images/img_.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    /*align-items: center; */
+    padding: 0 64px;
+}
+.hero-content{
+    position: absolute;
+    bottom: 106px;
+    display: flex;
+    gap: 20px;
+}
+.hero-btn{
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-weight: 500;
+    box-shadow: 0px 1px 2px #0d0d0d0c;
+    border: none;
+}
+.hero-btn-join{
+    width: 74px;
+    background-color: #f5f5dc;
+    color: #0d0d0d;
+}
+.hero-btn-early{
+    width: 132px;
+    background-color: #ffffff19;
+    color: #0d0d0d;
 }
