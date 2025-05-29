@@ -8,6 +8,7 @@ body{
     font-family: 'Cabin', sans-serif;
     color: #0d0d0d0d;
     line-height: 1.6;
+    height: 10000px;
 }
 .header{
     position: relative;
@@ -206,7 +207,7 @@ body{
 .ingredients-text {
     font-size: 18px;
     line-height: 27px;
-    margin-bottom: 44px;
+    margin-bottom: 24px;
     color: #0d0d0d;
 }
 
@@ -239,4 +240,50 @@ body{
     border-radius: 16px;
     object-fit: cover;
     padding-right: 10;
+}
+
+
+.testimonials {
+    padding: 50px 64px 50px;
+    background-color: #626258;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-slider {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.testimonial {
+    max-width: 748px;
+}
+
+.stars {
+    height: 18px;
+    margin-bottom: 32px;
+}
+
+.testimonial-text {
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+    color: #0d0d0d;
+    margin-bottom: 50px;
+}
+
+.testimonial-author {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 5px;
+    color: #0d0d0d;
+}
+
+.testimonial-divider {
+    height: 1px;
+    width: 100px;
+    background-color: #0d0d0d26;
 }
