@@ -356,3 +356,37 @@ body{
 .faq-item.active .faq-answer {
     display: block;
 }
+
+
+.meet-tasha {
+    padding: 49px 39px;
+    background-color: #d6ebdf;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 120px;
+}
+
+.tasha-content {
+    max-width: 443px;
+    color: #0d0d0d;
+}
+
+.tasha-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 81px;
+    margin-bottom: 8px;
+}
+
+.tasha-text {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.tasha-image {
+    width: 416px;
+    height: 300px;
+    border-radius: 16px;
+    object-fit: cover;
+}
