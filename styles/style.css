@@ -175,3 +175,68 @@ body{
     border-radius: 8px;
     object-fit: cover;
 }
+
+
+.ingredients {
+    padding: 60px 64px;
+    background-color: #eaf5ef;
+}
+
+.ingredients-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.ingredients-content {
+    max-width: 616px;
+    
+}
+
+.ingredients-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    margin-bottom: 24px;
+    color: #0d0d0d;
+   
+}
+
+.ingredients-text {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 44px;
+    color: #0d0d0d;
+}
+
+.benefits-list {
+    list-style: none;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    color: #0d0d0d;
+}
+
+.benefit-icon {
+    margin-right: 16px;
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+}
+
+.benefit-text {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.ingredients-image {
+    width: 500px;
+    height: 350px;
+    border-radius: 16px;
+    object-fit: cover;
+    padding-right: 10;
+}
