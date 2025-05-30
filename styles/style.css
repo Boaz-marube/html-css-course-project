@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
@@ -17,16 +20,23 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 64px;
+    padding: 0 10px;
     border-bottom: 1px solid #0d0d0d26;
 }
 .logo{
     height: 64px;
     width: 64px;
 }
+
 .nav{
     display: flex;
-    gap: 32px;
+    gap: 50px;
+    
+}
+@media screen and (max-width: 768px) {
+    .nav{
+        display: none;
+    }
 }
 .nav-link{
     font-size: 16px;
@@ -43,14 +53,23 @@ body{
     display: flex;
     gap: 16px;
 }
+.btn:hover{
+    background-color: #458f4b;
+
+}
+.btn:active{
+    background-color: #4ec257;
+}
+
 .btn{
     padding: 10px 20px;
     border-radius: 12px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 550;
     line-height: 20px;
     cursor: pointer;
-    box-shadow: 0px 1px 2px #0d0d0d0c;
+    box-shadow: 0px 1px 5px #0d0d0d0c;
+    transition: background-color 0.5s;
 }
 .btn-join{
     background-color: #0d0d0d0c;
@@ -72,7 +91,7 @@ body{
     background-position: center;
     display: flex;
     /*align-items: center; */
-    padding: 0 64px;
+    padding: 0 40px;
 }
 .hero-content{
     position: absolute;
@@ -89,17 +108,26 @@ body{
     font-weight: 500;
     box-shadow: 0px 1px 2px #0d0d0d0c;
     border: none;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: 550;
     
 }
 .hero-btn-join{
     width: 74px;
     background-color: #f5f5dc;
     color: #0d0d0d;
+    transition: background-color 0.5s;
+}
+.hero-btn:hover{
+    background-color: #458f4b;
+    
 }
 .hero-btn-early{
     width: 132px;
-    background-color: #ffffff19;
+    background-color: #ffffff92;
     color: #0d0d0d;
+    transition: background-color 0.5s;
 }
 
 
@@ -197,7 +225,7 @@ body{
     font-family: 'Jost', sans-serif;
     font-size: 40px;
     font-weight: 400;
-    line-height: 48px;
+    line-height: 44px;
     margin-bottom: 24px;
     color: #0d0d0d;
    
@@ -266,11 +294,11 @@ body{
 
 .testimonial-text {
     font-family: 'Jost', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 33px;
+    line-height: 26px;
     color: #0d0d0d;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .testimonial-author {
@@ -289,22 +317,22 @@ body{
 
 
 .faqs {
-    padding: 50px 64px;
+    padding: 30px 64px;
     background-color: #c4c4b0;
 }
 
 .faqs-title {
     font-family: 'Jost', sans-serif;
-    font-size: 48px;
+    font-size: 30px;
     font-weight: 400;
-    line-height: 70px;
-    margin-bottom: 17px;
+    line-height: 50px;
+    margin-bottom: 10px;
     color: #0d0d0d;
 }
 
 .faqs-subtitle {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 22px;
     margin-bottom: 19px;
     color: #0d0d0d;
@@ -329,7 +357,7 @@ body{
 
 .faq-question {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 22px;
     
 }
@@ -341,6 +369,7 @@ body{
 }
 
 .faq-answer {
+    font-weight: 200;
     font-size: 16px;
     line-height: 24px;
     margin-top: 22px;
@@ -549,20 +578,14 @@ body{
     gap: 32px;
     margin-bottom: px;
     text-align: center;
+} 
+.footer-{
+    cursor: pointer;
 }
-/*.footer-nav1{
-    gap:20px;
-    justify-content: space-between; 
-    display: flex;
-    gap: 20px;
-    justify-content: center; /* Center everything horizontally */
-     /* In case it overflows on small screens
-    text-align: center;
-    padding: 20px 0;
-    
+.footer-:hover{
+    text-decoration: underline;
 
-} */
-
+}
 .footer-link {
     font-size: 14px;
     font-weight: 600;
@@ -599,4 +622,95 @@ body{
 .footer-policy {
     color: #0d0d0d;
     text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .discover, .ingredients, .testimonials, .faqs, .blog{
+        padding: 60px 20px;
+    }
+
+    .ingredients-image{
+        width: 250px;
+        height: 250px;
+        display: none;
+
+    }
+    .ingredients-grid{
+        gap: 0px;
+    }
+    .ingredients-content{
+        grid-template-columns: 1fr;
+    
+    }
+    .discover-images{
+        flex-direction: column;
+        padding-left: 150px;
+    }
+    .discover-right-image{
+        display: none;
+    }
+    .discover-grid{
+        gap: 0;
+        grid-template-columns: 1fr ;
+    }
+    .blog-grid{
+        grid-template-columns: 1fr;   
+    }
+    .blog-card{
+        margin: 0 auto;
+    }
+    .footer-nav, .footer-bottom{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .testimonial{
+        min-width: 160px;
+    }
+    .testimonial-text{ 
+        font-size: 16px;
+        line-height: 22px;
+
+    }
+    .meet-tasha{
+        
+        column-gap: 40px;
+    }
+    .tasha-title{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .tasha-text{
+        line-height: 22px;
+        font-size: 16px;
+    }
+    .tasha-content{
+        min-width: 200px;
+    }
+    .tasha-image{
+        height: 200px;
+        width: 200px;
+    }
+    .about{
+        flex-direction: column;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-right: 10px;
+        
+    }
+    .about-title{
+        font-size: 40px;
+        line-height: 55px;
+        margin-bottom: 10px;
+    }
+    .about-text{
+        line-height: 16px;
+        font-size: 14px;
+    }
+    .about-content{
+        padding: 60px;
+        min-width: 500px;
+        margin-top: 0;
+    }
+    .about-image{
+        display: none;
+    }
 }
