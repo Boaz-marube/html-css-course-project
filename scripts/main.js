@@ -17,3 +17,19 @@ document.addEventListener('DOMContentLoaded', function(){
     });
 
 });
+
+document.addEventListener('DOMContentLoaded', function(){
+    const blogCards = document.querySelectorAll('.blog-card');
+
+    blogCards.forEach(card => {
+        card.addEventListener('mouseenter', function(){
+            this.style.transition = 'translateY(-5px)';
+            this.style.transition = 'transform 0.3s ease';
+            this.style.boxShadow = '0 10px 20px rgba(0,0,0,0.1)';
+        });
+        card.addEventListener('mouseleave', function(){
+            this.style.transform = 'translateY(0)'
+            this.style.boxShadow = 'none'
+        });
+    })
+});
